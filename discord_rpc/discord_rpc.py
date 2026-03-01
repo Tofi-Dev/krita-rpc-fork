@@ -45,7 +45,7 @@ class DiscordRpc(Extension):
                     else:
                         RPC.update(
                             details="Drawing on a empty document",
-                            state="Unnamed",
+                            state="Might be something cool!",
                             large_image="krita_logo",
                             start=int(self.time),
                             large_text=self.version
