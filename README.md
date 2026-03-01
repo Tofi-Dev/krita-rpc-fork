@@ -3,6 +3,9 @@ A slightly expanded version of the Krita DRP plugin that adds Discord Rich Prese
 <br>
 <img width="288" height="130" alt="Discord_RPC_example" src="https://github.com/user-attachments/assets/6db56115-27fe-4b36-92dd-b62aab41ef1c" />
 
+## Differences compared to Krita DRP (as of right now)
+- Different status text depending if drawing on a empty document or a saved one.
+
 ## How to install
 1. Press the "Code" button and download zip file.
 2. Open ``pykrita`` folder
