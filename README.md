@@ -5,6 +5,7 @@ A slightly expanded version of the Krita DRP plugin that adds Discord Rich Prese
 
 ## Differences compared to Krita DRP (as of right now)
 - Different status text depending if drawing on a empty document or a saved one.
+- Displays the resolution you're drawing in the status text.
 
 ## How to install
 1. Press the "Code" button and download zip file.

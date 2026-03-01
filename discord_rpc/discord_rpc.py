@@ -36,7 +36,7 @@ class DiscordRpc(Extension):
                     
                     if Krita.instance().activeDocument().fileName() != "":
                         RPC.update(details="Drawing something cool!",
-                                state=str(Krita.instance().activeDocument().name()) or "Unnamed",
+                                state=str(Krita.instance().activeDocument().name()) + " (" + str(Krita.instance().activeDocument().width()) + "x" + str(Krita.instance().activeDocument().height()) + ")",
                                 large_image="krita_logo", 
                                 start=int(self.time),
                                 large_text=self.version )
@@ -45,7 +45,7 @@ class DiscordRpc(Extension):
                     else:
                         RPC.update(
                             details="Drawing on a empty document",
-                            state="Might be something cool!",
+                            state="Might be something cool! " + "(" + str(Krita.instance().activeDocument().width()) + "x" + str(Krita.instance().activeDocument().height()) + ")",
                             large_image="krita_logo",
                             start=int(self.time),
                             large_text=self.version
