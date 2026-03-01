@@ -1,6 +1,6 @@
 # Extension by Fistbobr
 
-from krita import Extension
+from krita import Extension, Krita
 from .presence import Presence
 import time
 import PyQt5.QtCore
@@ -32,13 +32,26 @@ class DiscordRpc(Extension):
                 if self.time is 0:
                     self.time = time.time()
                 if self.file != Krita.instance().activeDocument().fileName():
-                    RPC.update(details="Testing",
-                               state=str(Krita.instance().activeDocument().name()) or "Unnamed",
-                               large_image="krita_logo", 
-                               start=int(self.time),
-                               large_text=self.version )
+                    print(str(Krita.instance().activeDocument().fileName()))
                     
-                    self.file = Krita.instance().activeDocument().fileName()
+                    if Krita.instance().activeDocument().fileName() != "":
+                        RPC.update(details="Drawing something cool!",
+                                state=str(Krita.instance().activeDocument().name()) or "Unnamed",
+                                large_image="krita_logo", 
+                                start=int(self.time),
+                                large_text=self.version )
+                        
+                        self.file = Krita.instance().activeDocument().fileName()
+                    else:
+                        RPC.update(
+                            details="Drawing on a empty document",
+                            state="Unnamed",
+                            large_image="krita_logo",
+                            start=int(self.time),
+                            large_text=self.version
+                        )
+                    
+                        self.file = Krita.instance().activeDocument().fileName()
             else:
                 RPC.update(details="Idle", large_image="krita_logo", large_text=self.version)
                 self.file = None
