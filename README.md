@@ -1,7 +1,8 @@
 # Krita DRP - Fork
 A slightly expanded version of the Krita DRP plugin that adds Discord Rich Presence support to Krita.
 <br>
-<img width="288" height="130" alt="Discord_RPC_example" src="https://github.com/user-attachments/assets/6db56115-27fe-4b36-92dd-b62aab41ef1c" />
+<img width="445" height="162" alt="image" src="https://github.com/user-attachments/assets/d02bb946-e4be-4aba-a6b3-7a5ad83c302c" />
+
 
 ## Differences compared to Krita DRP (as of right now)
 - Different status text depending if drawing on a empty document or a saved one.
