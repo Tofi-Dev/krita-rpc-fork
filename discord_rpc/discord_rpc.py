@@ -32,7 +32,7 @@ class DiscordRpc(Extension):
                 if self.time is 0:
                     self.time = time.time()
                 if self.file != Krita.instance().activeDocument().fileName():
-                    RPC.update(details="Drawing something cool!",
+                    RPC.update(details="Testing",
                                state=str(Krita.instance().activeDocument().name()) or "Unnamed",
                                large_image="krita_logo", 
                                start=int(self.time),
