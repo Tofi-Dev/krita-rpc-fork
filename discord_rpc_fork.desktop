@@ -5,4 +5,4 @@ X-KDE-Library=discord_rpc
 X-Python-2-Compatible=false
 X-Krita-Manual=Manual.html
 Name=Discord Rich Presence - Fork
-Comment=Add Discord Rich Presence support to Krita
+Comment=A slightly expanded version of the Krita DRP plugin that adds Discord Rich Presence support to Krita.
